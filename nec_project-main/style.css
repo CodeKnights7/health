@@ -1,0 +1,246 @@
+*{
+padding:0px;
+margin:0px;
+box-sizing:border-box;
+}
+body{
+    background-color:#00558E;
+}
+.Header{
+    width:100%;
+    height:80px;
+    /* border:1px solid black; */
+    display:flex;
+    justify-content: center;
+    background-color: white;
+}
+.NEC_Logo{
+    width: 450px;
+    height: 100%;
+}
+.Login_Container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    /* border:1px solid greenyellow; */
+    margin-top:50px;
+}
+.Login_card{
+    /* background-color: whitesmoke; */
+    display:flex;
+    width: 950px;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.40), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
+    /* border-radius:5px; */
+}
+.images{
+    width:55%;
+    height:100%;
+    /* border:1px solid red; */
+}
+.highlight{
+    text-decoration: underline;
+}
+#img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius:5px 0 0 5px;
+}
+
+.Login{
+    background-color: white;
+    width:45%;
+    height:100%;
+    border-radius:0 5px 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.NEC_Banner_Container{
+    width:100%;
+    height:15%;
+    background-color: #CED4DA;
+    /* border:1px solid black; */
+}
+.NEC_Banner{
+    width:100%;
+    height:100%;
+    object-fit:fill;
+}
+#fullline{
+    margin:0;
+}
+#login_title{
+    color:#00558E;
+    text-align:center;
+    font-size:25px;
+}
+#login_title_card{
+    margin:20px 0 20px 0;
+}
+/*
+#login_button{
+    border:1px solid black;
+    padding:5px;
+    background-color: white;
+    text-decoration: none;
+} */
+.logindetails{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.input{
+    /* background-color: olive; */
+    padding: 4.3px;
+}
+.input label{
+    color: #00558E;
+    font-size: 20.8px;
+    text-transform: capitalize;
+}
+.label{
+    margin:10px 0 10px 0;
+}
+.input_detail{
+    margin:10px 0 10px 0;
+}
+.input input {
+    font-size: 19.2px;
+    width: 320px;
+    outline: none;
+    outline-width:0;
+    border: 1px solid #00558E;
+    border-radius:2px;
+    background-color: #f4f8f8;
+    padding: 4.8px 0 4.8px 10px;
+}
+.input_detail[type="text"]:focus{
+    /* outline-width:0; */
+    outline:2px solid #FF6000;
+    border:2px solid #FF6000;
+    border-radius:2px;
+    margin:10px 0 8px 0;
+}
+.input_detail[type="password"]:focus{
+    /* outline-width:0; */
+    outline:2px solid #FF6000;
+    border:2px solid #FF6000;
+    border-radius:2px;
+    margin:10px 0 8px 0;
+}
+
+.loginbutton{
+    margin:10px 0 10px 0;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-direction: column;
+}
+.login_Button {
+    color: white;
+    background-color: #FF6000;
+    font-size: 1.1rem;
+    padding: .5rem 2rem;
+    border: 2px solid white;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+#alertMsg{
+    color: red;
+    text-transform: capitalize;
+    margin-top:5px;
+    visibility:hidden;
+    font-size: 1.1rem;
+}
+  
+.login_Button:active {
+    border: 2px solid transparent;
+}
+.login_Button:hover{
+    background-color: #ff4b00;
+}
+/* .loginbutton button a{
+    color:#f4f8f8;
+    text-decoration:none;
+} */
+.loginbutton p{
+    color:#576871;
+}
+.loginbutton p a{
+    color:#00558E;
+    text-decoration: none;
+    font-weight: bold;
+}
+.loginbutton p a:hover,.loginbutton p a:focus{
+    color:red;
+}
+/* .login_Button a{
+    text-decoration:none;
+    color:white;
+} */
+/* .login_using_account{
+    border:1px solid black;
+    margin:30px 0 30px 0;
+} */
+#forgotpassword{
+    text-align:center;
+    margin:0 0 5px 0;
+}
+#forgotpassword a{
+    color:#ff4b00;
+    text-decoration: none;
+}
+#forgotpassword:hover #forgotclick,#forgotpassword:focus #forgotclick{
+    text-decoration: underline;
+    color:#00558E;
+}
+hr{
+    margin:0 40px;
+}
+.login_via_google{
+    display:flex;
+    justify-content:space-evenly;
+    align-content:baseline;
+    align-items: center;
+    margin-top:10px;
+}
+.login_via_google p{
+    color:#576871;
+}
+.login_google_box{
+    text-align:center;
+    width:40%;
+    background-color:#CED4DA;
+    padding:10px;
+    border-radius:3px;
+}
+.login_google_box a{
+    text-decoration: none;
+    color:black;
+}
+.login_google_box:hover{
+    background-color:#a9a9a9;
+}
+.footer{
+    width:100%;
+    height:80px;
+    background-color: #343A40;
+    position: absolute;
+    margin-top:10px;
+    bottom: 0px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.footer_content{
+    color:white;
+}
+.footer_content a{
+    color:white;
+    text-decoration:none;
+}

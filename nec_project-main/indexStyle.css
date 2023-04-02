@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #85FFBD;
+    background: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    /* background: url("./assets/nec_home.jpg"); */
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.necBanner{
+    width:100vw;
+    height: 15vh;
+}
+
+.login{
+    position: relative;
+    top:8vh;
+    background-color: rgba(255, 255, 255, 0.637);
+    max-width: 45vw;
+    margin: 0 auto;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+}
+.login_header{
+    background-color: rgb(240, 53, 146);
+    padding: .3rem;
+    border-radius: .5rem .5rem 0 0;
+}
+.loginTitle{
+    color: white;
+    text-align: center;
+}
+
+.loginForum{
+    /* background-color: rgb(50, 148, 205); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height:30vh;
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.input {
+    /* background-color: olive; */
+    padding: .3rem;
+}
+.input label{
+    color: green;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+.input input{
+    font-size: 1.2rem;
+    width:20rem;
+    outline:none;
+    margin: .3rem 0;
+    border: 2px solid rgb(13, 212, 6);
+    background-color: rgb(244, 248, 248);
+    padding: .3rem;
+}
+.input input:focus{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: .2rem solid rgb(13, 212, 6);
+}
+
+.loginButn{
+    color: white;
+    background-color: rgb(71, 183, 235);
+    font-size: 1.2rem;
+    padding: .3rem 2.5rem;
+    border:none ;
+    border: 2px solid white;
+    border-radius: .5rem;
+}
+
+.loginButn:active{
+    border: 2px solid transparent;
+
+}
+
+.loginFooter{
+    padding: .5rem;
+    color: black;
+    text-align: center;
+}
+.Line{
+    background-color: rgb(201, 196, 196);
+    padding: .05rem;
+    width:35vw;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+}
+
+.loginFooter a{
+    color: green;
+    font-size: 1.1rem;
+    /* text-decoration: none; */
+}
+
+footer{
+    background-color: rgb(24, 240, 53);
+    position: absolute;
+    bottom: 0;
+    width:100vw;
+    padding: 1rem 5rem;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}

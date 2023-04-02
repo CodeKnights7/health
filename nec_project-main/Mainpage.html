@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/photo_2022-05-20_18-52-49.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="Mainpage.css">
+    <title>Booking Hall</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar_content">
+            <div class="navimage">
+                <img src="assets/photo_2022-05-20_18-52-49.jpg" alt="NEC logo" width="50px" height="50px">
+                <p>NEC</p>
+            </div>
+            <div class="log_id">
+                <div id="Username_box">
+                    <p id="Username">Username</p>
+                </div>
+                <div id="Logout_box">
+                    <a href="index.html">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Booking_box">
+        <div class="Booking_box_card">
+            <div class="boxinsidebox">
+                <div class="Div1">
+                    <h1 class="heading">Health Care</h1>
+                    <div class="faculty_department">
+                        <label for="facultydepartment" id="facultydepartmentlabel">Name of the Doctor:</label>
+                        <select name="facultydepartment" id="facultydepartment" required>
+                            <option value="" selected>___SELECT___</option>
+                            <option value="CSE">Cardio</option>
+                            <option value="IT" >Dentist</option>
+                            <option value="ECE">General Surgery</option>
+                            <option value="MECH">ENT</option>
+                            <option value="EEE">General Medicine</option>
+                        </select>
+                    </div>
+                    <div class="faculty_name">
+                        <label for="facultyname" id="facultynamelabel">Name of the Doctor:</label>
+                        <input type="text" id="facultyname" name="facultyname" placeholder="Faculty Name" required>
+                    </div>
+                    <div class="faculty_designation">
+                        <label for="facultydesignation" id="facultydesignationlabel">>Doctor Specliciation:</label>
+                        <input type="text" id="facultydesignation" name="facultydesignation" placeholder="Faculty Designation"  required>
+                    </div>
+                    <div class="hall_requirement">
+                        <label for="hallrequirementdep" id="hallrequirementlabel">Hall Requirement:</label>
+                        <select name="hallrequirementdep" id="hallrequirementdep"  required>
+                            <option value="Null" selected>___SELECT___</option>
+                            <option value="CSE">CSE</option>
+                            <option value="IT" >IT</option>
+                            <option value="ECE">ECE</option>
+                            <option value="MECH">MECH</option>
+                            <option value="EEE">EEE</option>
+                        </select>
+                        <select name="hallrequirementroom" id="hallrequirementroom"  required>
+                            <option value="" selected>___SELECT___</option>
+                            <!-- <option value="it sem">IT sem</option>
+                            <option value="it class">IT class</option>
+                            <option value="it room">IT room</option>
+                            <option value="it bar">IT bar</option> -->
+                        </select>
+                    </div>
+                    <div class="at_date">
+                        <label for="atdate">Date:</label>
+                        <input type="date" name="atdate" id="atdate"  required>
+                    </div>
+                    <div class="time_range">
+                        <label for="timerange" id="timerangelabel">Time</label>
+                        <label for="timerangefrom" id="trf">From:</label>
+                        <input type="time" id="timerangefrom" >
+                        <label for="AM1">AM</label>
+                        <input type="radio" name="FAP" value="AM" id="AM1" checked>
+                        <label for="PM1">PM</label>
+                        <input type="radio" name="FAP" value="PM" id="PM1">
+                        <span class="space1"></span>
+                        <label for="timerangeto" id="trf">TO:</label>
+                        <input type="time" id="timerangeto">
+                        <label for="AM2" id="trf">AM</label>
+                        <input type="radio" name="TAP" value="AM" id="AM2" checked>
+                        <label for="PM2" id="trf">PM</label>
+                        <input type="radio" name="TAP" value="PM" id="PM2">
+                    </div>
+                    <div class="audio_system">
+                        <label id="audiosystemlabel">PA System</label>
+                        <div class="audiosystemcard">
+                            <div class="audiosystemcards">
+                                <input type="radio" id="need1" class="option1" name="audiosystem" value="need" checked>
+                                <label for="need1">Need</label>
+                            </div>
+                            <div class="audiosystemcards">
+                                <input type="radio" id="need2" class="option2" name="audiosystem" value="notneed">
+                                <label for="need2">Not Need</label>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="note">
+                        <label for="TextBox">Note</label>
+                        <textarea id="TextBox" cols="30" rows="3" placeholder="description"></textarea>
+                    </div>
+                    <div class="bookingbtn">
+                        <button class="book_btn" id="loginButn">Book</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="footer">
+        <div class="footer_content_container">
+            <p class="footer_content">&copy; 2022 NEC Hall Booking </p>
+            <p class="footer_content">Designed by NEC IT Students 2020-2024 batch</p>
+            <p class="footer_content">For Technical Support? Contact through Email:group mail id</p>
+        </div>
+    </div>
+    <script src="Mainpage.js" type="module"></script>
+</body>
+</html>

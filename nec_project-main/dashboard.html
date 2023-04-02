@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard_css.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header_img">
+        <img
+          src="https://nec.edu.in/wp-content/themes/vajra/assets/images/logo_2.svg"
+          alt="NEC Logo"
+        />
+      </div>
+      <div class="header_text">
+        <button class="logoutButn">Logout</button>
+      </div>
+    </header>
+    <div class="master">
+      <div class="sidebar">
+        <h2 class="dashboardText">Dashboard</h2>
+        <div class="loginName">
+          <h3 class="loginUserDept" id="loginID"></h3>
+        </div>
+        <div class="sideTextBar">
+          <div class="sideText" id="page4" style="display: none">
+            <img src="./assets//booking.png" alt="" />
+            <p>booking requests</p>
+          </div>
+          <div class="sideText" id="page1" style="display: none">
+            <img src="./assets/file.png" alt="" />
+            <p>booking approval</p>
+          </div>
+          <div class="sideText" id="page2" style="display: none">
+            <img src="./assets/plus.png" alt="" />
+            <p>Add Doctor</p>
+          </div>
+          <div class="sideText" id="page3" style="display: none">
+            <img src="./assets/history.png" alt="" />
+            <p>history</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="inbox" id="inboxPage">
+          <div class="inboxHeader">
+            <span class="inboxName">index</span>
+            <span class="inboxName">Patient name</span>
+            <!-- <span class="inboxName">designation</span> -->
+            <span class="inboxName">Date</span>
+            <span class="inboxName">time</span>
+            <span class="inboxName">Date/Time</span>
+            <span class="inboxName">Open</span>
+          </div>
+          <div id="inboxData"></div>
+          <div class="openDiv" id="openDiv" style="display: none">
+            <div class="openTitle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="openTextSend">
+              <textarea
+                id="openTextBox"
+                placeholder="Prescription"
+              ></textarea
+              ><br /><br />
+              <button class="appButn actionButn">Approve</button>
+              <button class="decButn actionButn">Decline</button>
+            </div>
+          </div>
+        </div>
+        <div class="addHall" id="addHallPage">
+          <div class="newHall">
+            <div class="addNewHall">
+              <div class="addHallTitle">Add New Doctor</div>
+              <div class="addHallForum">
+                <label for="newHallName">Doctor Name</label><br />
+                <input type="text" id="newHallName" placeholder="" /><br />
+                <button id="addHallButn">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- history page -->
+        <div class="history" id="historyPage">
+          <div class="history_div">
+            <h2 class="historyTitle">booking history</h2>
+            <div class="historyGrid">
+              <div class="historyHeader">
+                <div class="historyValue">Name</div>
+                <div class="historyValue">Doctor Name</div>
+                <!-- <div class="historyValue">Booked Dept</div>
+                <div class="historyValue">Booked Hall</div> -->
+                <div class="historyValue">Booked Date</div>
+                <div class="historyValue">Event Time</div>
+                <div class="historyValue">Status</div>
+              </div>
+              <div id="historyDataId"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- booking requests page  -->
+        <div class="reserved" id="reservedPage">
+          <div class="bookingDiv">
+            <h2 class="BookingTitle">Booking Requests</h2>
+            <form id="dataForm">
+              <div class="bookingForm">
+                <div class="bookingInput">
+                  <label for="facultyname">Patient name</label>
+                  <input type="text" id="facultyname" required />
+                </div>
+
+                <div class="bookingInput">
+                  <label for="facultydesignation">Doctor Name</label>
+                  <select name="wefw" id="facultydepartment" required>
+                    <option value="Null" selected>Name</option>
+                    <option value="CSE">Karthi</option>
+                    <option value="IT">Kallapiran</option>
+                    <option value="ECE">Praveen</option>
+                    <option value="MECH">Vijay</option>
+                    <option value="EEE">KK</option>
+                  </select>
+                </div>
+
+                <div class="bookingInput">
+                  <label for="atdate">Booking date</label>
+                  <input type="date" id="atdate" required />
+                </div>
+
+                <div class="bookingInput">
+                  <label for="TimeTo">Time To</label>
+                  <input type="time" name="time" id="time" />
+                </div>
+                <div class="bookingInput">
+                  <label for="PAS">Already Considerd the Doctor</label>
+                  <select id="PAS" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+                <div class="bookingInput">
+                  <label for="TextBox">Symptoms</label>
+                  <textarea id="TextBox" cols="40" rows="3"></textarea>
+                </div>
+              </div>
+
+              <div class="butnDiv">
+                <input id="bookingButn" type="submit" value="book" />
+                <input id="clearingButn" type="reset" value="clear" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="footer">
+        <div class="footer_content_container">
+            <p class="footer_content">&copy; 2022 NEC Hall Booking </p>
+            <p class="footer_content">Designed by NEC IT Students 2020-2024 batch</p>
+            <p class="footer_content">For Technical Support? <a href="mailto:2015003@nec.edu.in, 2015030@nec.edu.in, 2015031@nec.edu.in, 2015037@nec.edu.in">Contact through Email</a></p>
+        </div>
+    </div> -->
+    <div class="alertBox" id="alertbox" style="display: none">
+      <div class="alertDiv" id="alertdiv">
+        <div class="image_line">
+          <img
+            src="./assets/tick_image.jpg"
+            alt="super image"
+            class="alert_img"
+          />
+        </div>
+        <h3 id="alertMsg">thank you for your code</h3>
+        <button class="alertButn actionButn">Ok</button>
+      </div>
+    </div>
+    <script src="./dashboardScript.js" type="module"></script>
+  </body>
+</html>
